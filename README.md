@@ -1,2 +1,77 @@
-# ShapeOfDreamsModDocs
-Shape of Dreams Documentation for Mod Creators
+# Hello Travelers!
+**Shape of Dreams - Documentation for Mod Creators**
+
+Welcome to the rudimentary documentation / starter guide for mod creators.
+
+Please note that mod support (including this documentation) is currently in its early stages, and is somewhat basic. However, we are doing our best to make mod creation easy for developers, despite our limited time and being short-staffed. We are very short on programmers and we're all kind of uninitiated on this whole modding thing, so we would greatly appreciate feedback and helping hands.
+
+**Sorry in advance for the bumpy road ahead, and thank you so much for your understanding!**
+
+# Links
+
+**Shape of Dreams Workshop:** https://steamcommunity.com/app/2444750/workshop/
+
+**API References (Dew.Core):** https://lizardsmoothie.com/sod/moddoc/api/Global.html
+
+**Official Example Mods:** https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750
+
+# Getting Started
+
+## Prerequisites
+To mod the game easily, you’ll need below things at minimum:
+
+- A basic knowledge on C# and .NET projects management
+- A basic knowledge on modding Unity games by using Harmony
+- A decompiler to look into the game’s code.
+
+## Developer Mode & Console
+Go to gameplay settings, and enable Developer Mode to get access to in-game debug console.
+With the mode enabled, press **F1** to toggle console mode.
+
+- **Shown:** Log viewer is displayed on the right side of the screen. Use **[ ` ]** key to open or close the console.
+- **ShownWithoutPopup:** Log viewer is not displayed. Use **[ ` ]** key to open or close the console.
+- **Hidden:** Log viewer is not displayed and console cannot be opened.
+
+## Mod Manager
+Albeit a little bare bones, the game is equipped with a built-in mod manager, which you can find in the title screen among the menu buttons(”Mods”). 
+
+If you have developer mode enabled, you can access the manager anywhere in the game, by opening the console and clicking on “Manage Mods”. 
+
+A friendly reminder: loading and unloading mods in the middle of a game can cause unexpected bugs and shennanigans!
+
+## Creating your own mod: Project Template
+We provide a project template you can use to get started in making your own mod quickly, in "<GameFolder>/Mods/ModTemplate".
+1. Install the template in your preferred IDE
+2. Create a new project using the template in "Mods" folder.
+3. Make sure you fill in required fields and enable "Place solution and project in a same folder". The project will then refer to the game's assembly files and provide you most of the necessary namespaces and classes.
+
+## Scripting and ModBehaviours
+When loading a mod, DLLs specified in its metadata.json's "assemblies" key will be injected to the game. When this happens, **ModBehaviour**s will be your main entry point and a way to manage lifecycle of your mods. All ModBehaviours in your compiled assembly will be attached to a single container GameObject, and each container is created for each mod instance.
+
+Mods can be loaded and be unloaded, so make sure you clean up properly when a ModBehaviour is destroyed!
+
+## Harmony
+Harmony is built-in, and you can access your harmony instance with `harmony` property in any ModBehaviors. If you're patching something, make sure you unpatch in `OnDestroy`.
+
+## JSON Overrides
+JSON Overrides are a powerful, easy, and declarative way to modify various parameters in the game. If you'd like to change character stats, damage numbers, cooldown times and such in the game statically, this is probably the easiest way to go.
+
+### Pros
+1. Requires no C# knowledge
+2. Supports multiplayer (automatically syncs from the host to clients)
+
+### Cons
+1. Cannot dynamically modify paramters (e.g. no user-customizable settings, no situational awareness)
+2. Can only modify certain parameters (see: "<GameFolder>/RawData/!ModResources/overrides")
+3. Works only if hosts have them installed
+   
+Please refer to [SUPER LACERTA](https://steamcommunity.com/sharedfiles/filedetails/?id=3618193300) example on how the system work.
+
+Refer to "<GameFolder>/RawData/!ModResources/overrides" to see which paramters you can change.
+
+## Under Construction
+
+Sorry to disappoint you, but the documentation ends here for now. We are working hard to add more content useful for mod creators.
+Until then, please refer to [Offical Example Mods](https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750) or [Shape of Dreams Workshop](https://steamcommunity.com/app/2444750/workshop/) to see what others have already made.
+
+All the best, Lizard Smoothie
