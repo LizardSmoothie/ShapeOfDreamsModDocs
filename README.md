@@ -32,6 +32,8 @@ With the mode enabled, press **F1** to toggle console mode.
 - **ShownWithoutPopup:** Log viewer is not displayed. Use **[ ` ]** key to open or close the console.
 - **Hidden:** Log viewer is not displayed and console cannot be opened.
 
+You can add custom console commands with ModBehaviours, or you can install mods with console commands the others have built. Here's an [official one](https://steamcommunity.com/sharedfiles/filedetails/?id=3618192903) with several cheats you can make use. This is what we also use internally inside our studio. 
+
 ## Mod Manager
 Albeit a little bare bones, the game is equipped with a built-in mod manager, which you can find in the title screen among the menu buttons(”Mods”). 
 
