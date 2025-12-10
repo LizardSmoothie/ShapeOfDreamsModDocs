@@ -52,6 +52,8 @@ When loading a mod, DLLs specified in its metadata.json's "assemblies" key will 
 
 Mods can be loaded and be unloaded, so make sure you clean up properly when a ModBehaviour is destroyed!
 
+After you write some useful code, build the solution to yield DLL files, and then load the mod to see the results.
+
 ## Harmony
 Harmony is built-in, and you can access your harmony instance with `harmony` property in any ModBehaviors. If you're patching something, make sure you unpatch in `OnDestroy`.
 
@@ -74,6 +76,6 @@ Refer to "<GameFolder>/RawData/!ModResources/overrides" to see which paramters y
 ## Under Construction
 
 Sorry to disappoint you, but the documentation ends here for now. We are working hard to add more content useful for mod creators.
-Until then, please refer to [Offical Example Mods](https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750) or [Shape of Dreams Workshop](https://steamcommunity.com/app/2444750/workshop/) to see what others have already made.
+Until then, please refer to [Offical Example Mods](https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750) or [Shape of Dreams Workshop](https://steamcommunity.com/app/2444750/workshop/) to see what others have already made. As a starting point, I suggest installing all official mods and taking a look into the source code.
 
 All the best, Lizard Smoothie
