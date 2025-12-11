@@ -1,5 +1,6 @@
 # Hello Travelers!
-**Shape of Dreams - Documentation for Mod Creators**
+
+<img width="3840" height="1240" alt="steam banner" src="https://github.com/user-attachments/assets/a186b083-34df-4392-af83-d0be1ff292da" />
 
 Welcome to the rudimentary documentation / starter guide for mod creators.
 
