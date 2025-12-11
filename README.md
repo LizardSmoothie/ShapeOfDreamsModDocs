@@ -78,4 +78,6 @@ Refer to "<GameFolder>/RawData/!ModResources/overrides" to see which paramters y
 Sorry to disappoint you, but the documentation ends here for now. We are working hard to add more content useful for mod creators.
 Until then, please refer to [Offical Example Mods](https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750) or [Shape of Dreams Workshop](https://steamcommunity.com/app/2444750/workshop/) to see what others have already made. As a starting point, I suggest installing all official mods and taking a look into the source code.
 
+If you have any contributions to make to this repository, we'll review them as quick as possible and make sure everyone gets a better version of the documentation. Thank you!
+
 All the best, Lizard Smoothie
