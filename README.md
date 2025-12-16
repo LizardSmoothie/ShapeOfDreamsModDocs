@@ -61,7 +61,9 @@ We provide a project template you can use to get started in making your own mod 
 ## Uploading a Mod to Workshop
 When you have the developer mode enabled, you will see Upload button in the mod manager when you select a mod. When you upload a mod for the first time, a new item will be created on Steam Workshop. After that, consequent uploads will be an update to the existing item.
 
-Uploaded mods will have their visibility automatically set to **Hidden**, allowing you to make final changes and adjustments before you decide to publish this mod for everyone, by setting it to **Public**. Note that updating a mod will also set the visibility to hidden.
+Uploaded mods will have their visibility automatically set to **Hidden**, allowing you to make final changes and adjustments before you decide to publish this mod for everyone, by setting it to **Public**. 
+
+Note that updating a mod will also set the visibility to hidden.
 
 ## Scripting and ModBehaviours
 When loading a mod, DLLs specified in its metadata.json's "assemblies" key will be injected to the game. When this happens, **ModBehaviour**s will be your main entry point and a way to manage lifecycle of your mods. All ModBehaviours in your compiled assembly will be attached to a single container GameObject, and each container is created for each mod instance.
