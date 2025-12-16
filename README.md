@@ -58,6 +58,11 @@ We provide a project template you can use to get started in making your own mod 
 2. Create a new project using the template in "Mods" folder.
 3. Make sure you fill in required fields and enable "Place solution and project in a same folder". The project will then refer to the game's assembly files and provide you most of the necessary namespaces and classes.
 
+## Uploading a Mod to Workshop
+When you have the developer mode enabled, you will see Upload button in the mod manager when you select a mod. When you upload a mod for the first time, a new item will be created on Steam Workshop. After that, consequent uploads will be an update to the existing item.
+
+Uploaded mods will have their visibility automatically set to **Hidden**, allowing you to make final changes and adjustments before you decide to publish this mod for everyone, by setting it to **Public**. Note that updating a mod will also set the visibility to hidden.
+
 ## Scripting and ModBehaviours
 When loading a mod, DLLs specified in its metadata.json's "assemblies" key will be injected to the game. When this happens, **ModBehaviour**s will be your main entry point and a way to manage lifecycle of your mods. All ModBehaviours in your compiled assembly will be attached to a single container GameObject, and each container is created for each mod instance.
 
@@ -82,7 +87,6 @@ JSON Overrides are a powerful, easy, and declarative way to modify various param
 2. Can only modify certain parameters (see: "<GameFolder>/RawData/!ModResources/overrides")
 3. Works only if hosts have them installed
 
-`instance.isAlteringGameplay` will automatically be set to true,
 Please refer to [SUPER LACERTA](https://steamcommunity.com/sharedfiles/filedetails/?id=3618193300) example on how the system work.
 
 Refer to "<GameFolder>/RawData/!ModResources/overrides" to see which paramters you can change.
