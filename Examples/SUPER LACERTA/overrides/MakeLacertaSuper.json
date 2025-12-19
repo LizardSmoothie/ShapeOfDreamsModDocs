@@ -1,0 +1,47 @@
+﻿[
+  {
+    "target": "Hero_Lacerta",
+    "overrides": {
+      "EntityStatus::baseStats.attackDamage": 1000,
+      "EntityStatus::baseStats.maxHealth": 5000,
+      "EntityStatus::scalingStats.abilityPowerFlat": 100.0,
+      "EntityControl::baseAgentSpeed": 10
+    }
+  },
+  {
+    "target": "Ai_Q_HandCannon",
+    "overrides": {
+      "factor.valueString": "10ap",
+      "closeFactor.valueString": "20ap",
+      "knockback.distance": 20,
+      "knockback.duration": 2,
+      "recoilDuration": 1,
+      "recoilDistance": 10
+    }
+  },
+  {
+    "target": "St_M_NimbleDodge",
+    "overrides": {
+      "configs.0._maxCharges": 10,
+      "configs.0.castMethod._range": 10
+    }
+  },
+  {
+    "target": "Ai_R_QuickTrigger",
+    "overrides": {
+      "fireCount": 10,
+      "fireInterval": 0.05,
+      "deviateAngles.0": 10.0,
+      "deviateAngles.1": 0.0,
+      "deviateAngles.2": -10.0
+    }
+  },
+  {
+    "target": "Ai_Q_IncendiaryRounds_Attack",
+    "overrides": {
+      "damage.valueString": "1ap",
+      "damage.leveling": 0,
+      "damage.scalingMultiplier": 1.0
+    }
+  }
+]

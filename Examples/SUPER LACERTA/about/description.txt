@@ -1,0 +1,7 @@
+[h1]SUPER LACERTA[/h1]
+Make the local lizard man stronk
+
+[h2]For modders[/h2]
+This is an example of multiplayer-compatible pure (no C#) mod that uses json overrides to modify game parameters.
+If the server has this mod, all modifications will be synced to clients.
+The mod has no effect when installed on clients.
