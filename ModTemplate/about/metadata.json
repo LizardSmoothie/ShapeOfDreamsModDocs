@@ -1,0 +1,12 @@
+{
+  "id": "com.yourname.testmod",
+  "name": "TestMod",
+  "author": "AuthorName",
+  "modVer": "1.0",
+  "supportedGameVer": [
+    "*"
+  ],
+  "assemblies": [
+    "bin/Debug/netstandard2.1/TestMod.dll"
+  ]
+}

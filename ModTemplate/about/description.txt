@@ -1,0 +1,3 @@
+[h1]Hello World![/h1]
+This description will be shown on the mod manager, and be uploaded to Steam Workshop.
+Note some tags like tables, links and images are not supported in the in-game mod manager and will be either omitted / shown as plain-text.
