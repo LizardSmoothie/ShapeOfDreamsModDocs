@@ -17,6 +17,7 @@ Please note that mod support (including this documentation) is currently in its 
 **Official Example Mods:** https://steamcommunity.com/id/lizardsmoothie/myworkshopfiles/?appid=2444750
 
 # Code of Conduct
+1. You must conform to our [Modding Terms of Service](https://shape-of-dreams.gitbook.io/shape-of-dreams-modding-terms-of-service/).
 1. You may make a mod that severely alters gameplay.
 1. You may make a mod that lets you cheat progress or runs.
 1. You **must not** make a mod that severely affects other's experience without their consent. (e.g. client-side cheats or troll mods)
