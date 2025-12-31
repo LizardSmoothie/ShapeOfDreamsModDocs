@@ -1,0 +1,10 @@
+{
+  "id": "com.lizardsmoothie.testmod",
+  "name": "SUPER LACERTA",
+  "author": "Lizard Smoothie",
+  "modVer": "1.0",
+  "supportedGameVer": [
+    "*"
+  ],
+  "assemblies": []
+}
