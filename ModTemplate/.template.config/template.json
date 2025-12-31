@@ -1,0 +1,38 @@
+{
+  "author": "Lizard Smoothie",
+  "name": "Shape of Dreams Mod Template",
+  "description": "A project for creating a Shape of Dreams mod.",
+  "identity": "LizardSmoothie.ShapeOfDreamsModTemplate.1.0",
+  "shortName": "sodmod",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TestMod",
+  "symbols": {
+    "ProjectGuid": {
+      "type": "generated",
+      "generator": "guid",
+      "parameters": {
+        "format": "D"
+      }
+    },
+    "ModId": {
+      "type": "parameter",
+      "description": "The unique identifier for the mod (e.g., com.yourname.yourmod)",
+      "replaces": "com.yourname.testmod",
+      "defaultValue": "com.yourname.yourmod"
+    },
+    "ModAuthor": {
+      "type": "parameter",
+      "description": "The author of the mod",
+      "replaces": "AuthorName",
+      "defaultValue": "Your Name"
+    }
+  },
+  "content": {
+    "about/": {
+      "include": "about/**/*"
+    }
+  }
+}
